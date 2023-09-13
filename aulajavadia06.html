@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        var carro = {
+            modelo: "HB20",
+            marca: "Hyundai",
+            cor: "Cinza Silk",
+            ano: 2022,
+        
+            qtdLugares: 5,
+            tipoCarro: "hatch",
+            tamanhoRoda: 15,
+            tipoCombustível:"flex",
+            potencia: 100,
+            preco:82000,
+            acessorios: ["som integrado", "arcondicionado", "Blue Link", "computador de bordo"],
+            endereco:{
+                logradouro: "Av. Caxangá, 1134",
+                bairro: "Iputinga",
+                cidade: "Recife",
+                localizacao: [-8.0651289,-34.905337]
+            }
+        }
+
+        //for (var i=0; i<+ carro.acessorios.length-1; i++) {
+      //      document.write("item "+ (i+1)+": "+carro.acessorios[i]);
+      //      document.write("<br>");
+      //  }
+
+        //document.write(carro.modelo)
+       // document.write(carro["modelo"]);
+       // document.write("<br>");
+        //console.log(carro);
+       // carro.acessorios.push("cadeirinha de bebê")
+       // document.write("Valor da parcela: " + carro.preco/48);
+
+        carro.ano=2021;
+        
+        var livro= {
+            titulo: "Harry Potter e a Enigma do Príncipe",
+            autor: "J. K. Rowlling",
+            editora: "Rocco",
+            ano: 20
+
+        };
+
+        console.log(livro);
+
+        var giseli= {
+            nome: "Giseli",
+            forca:1,
+            destreza:3,
+            agilidade:2,
+            inteligencia:3,
+            percepcao:-1
+        };
+        console.log(giseli);
+        document.write(giseli.nome);
+       ;
+        var resposta = prompt("Deseja criar  um personagem? 1-Sim 0-Não");
+        while (resposta == "1") {
+
+       var n = prompt("digite o nome do personagem:");
+       var f = parseInt(prompt("digite a força. -3 a +3"));
+       var d = parseInt(prompt("digite a destreza. -3 a +3"));
+       var a = parseInt(prompt("digite a agilidade. -3 a +3"));
+       var i = parseInt(prompt("digite a inteligância. -3 a +3"));
+       var p = parseInt(prompt("digite a percepçãp. -3 a +3"));
+
+       var personagem ={
+        nome:n,
+        forca:f,
+        destreza:d,
+        agilidade:a,
+        inteligencia:i,
+        percepcao:p,
+        imprimeDados: function(){
+            document.write("<b>Nome:</b> "+this.nome+"<br>");
+            document.write("<b>Força:</b> "+this.forca+"<br>");
+            document.write("<b>Destreza:</b> "+this.destreza+"<br>")    
+        }
+    }
+        personagem.imprimeDados();
+       resposta = prompt("Deseja criar mais um personagem? 1-Sim 0-Não")
+}
+
+ //       var Personagem1 = {
+
+       //     forca:
+       //     destreza:
+         //   agilidade:
+          //  inteligencia:
+          //  percepcao:-
+//};
+
+
+
+    </script>
+</body>
+</html>

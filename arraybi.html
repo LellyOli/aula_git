@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+	var pessoas =[
+	[19, "João", 715],
+	[19, "Giselu", 137],
+	[52, "Miguel", 526],
+	[18, "Nael", 747]
+	];
+	
+//Imprimir cpf do 3º fulaninho, a idade do 4º fulaninho e o nome do 1º fulaninho
+	document.write(pessoas[2][2]);
+	document.write("<br>");
+	document.write(pessoas[3][0]);
+	document.write("<br>");
+	document.write(pessoas[0][1]);
+	document.write("<br>");
+	
+//Imprimimir todas as informações de todo mundo
+	document.write(pessoas[0][0]+" ");
+	document.write(pessoas[0][1]+" ");
+	document.write(pessoas[0][2]);
+	document.write("<br>");
+	document.write(pessoas[1][0]+" ");
+	document.write(pessoas[1][1]+" ");
+	document.write(pessoas[1][2]+" ");
+	document.write("<br>");
+	document.write(pessoas[2][0]+" ");
+	document.write(pessoas[2][1]+" ");
+	document.write(pessoas[2][2]);		
+	document.write("<br>");
+
+	document.write(pessoas+"<br>")
+	
+	
+	
+	for(var i = 0; 1 <= pessoas.length -1; i++ ){
+	document.write("Idade: "+pessoas[i][0]+" Nome: " +pessoas[i][1]+" CPF: "+pessoas[i][2]);
+	document.write("<br>");
+	}
+	
+	document.write("Idade: "+pessoas[0][0]+" Nome: " +pessoas[0][1]+" CPF: "+pessoas[0][2]);
+	document.write("<br>");
+	document.write("Idade: "+pessoas[1][0]+" Nome: " +pessoas[1][1]+" CPF: "+pessoas[1][2]);
+	document.write("<br>");
+	document.write("Idade: "+pessoas[2][0]+" Nome: " +pessoas[2][1]+" CPF: "+pessoas[2][2]);
+	document.write("<br>");
+	document.write("Idade: "+pessoas[3][0]+" Nome: " +pessoas[3][1]+" CPF: "+pessoas[3][2]);
+	document.write("<br>");
+	
+	
+</script>
+</body>
+</html>
